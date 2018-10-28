@@ -1,5 +1,5 @@
 ---
-title: "Homework 04"
+title: "MATH 341 - Homework 04"
 author: "Marjorie Blanco"
 date: "January 29, 2018"
 output:

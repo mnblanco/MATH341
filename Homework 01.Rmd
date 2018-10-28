@@ -1,5 +1,5 @@
 ---
-title: "Homework 01"
+title: "MATH 341 - Homework 01"
 author: "Marjorie Blanco"
 date: "January 3, 2018"
 output:
@@ -52,7 +52,7 @@ The median of the data set is: `r round(median(prob$data),2)`
 
 The mode of the data set is: `r getmode(prob$data)`
 
-![](Figure3-14.PNG)
+![](img/Figure3-14.PNG)
 
 
 # Problem 3.31
@@ -90,8 +90,7 @@ mean(prob$BudgetHotel, na.rm=TRUE)
 sd(prob$BudgetHotel, na.rm=TRUE)
 ```
 
-![](Figure3-31a.PNG)
-
+![](img/Figure3-31a.PNG)
 
 ## Variance
 
@@ -99,7 +98,7 @@ The variance of the data set is: `r round(var(prob$LuxuryHotel, na.rm=TRUE), 2)`
 
 The variance of the data set is: `r round(var(prob$BudgetHotel, na.rm=TRUE), 2)`
 
-![](Figure3-31b.PNG)
+![](img/Figure3-31b.PNG)
 
 ```{r}
 ggplot(data=prob, aes(x="Luxury", y=prob$LuxuryHotel)) +
