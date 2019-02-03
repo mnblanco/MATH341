@@ -20,7 +20,7 @@ title: "MATH 341 - Homework 01"
 author: "Marjorie Blanco"
 output:
   html_document:
-    number_sections: yes
+    number_sections: no
     toc: yes
     toc_float: yes
   pdf_document:

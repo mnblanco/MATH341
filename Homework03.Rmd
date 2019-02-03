@@ -3,7 +3,7 @@ title: "Homework 03"
 author: "Marjorie Blanco"
 output:
   html_document:
-    number_sections: yes
+    number_sections: no
     toc: yes
     toc_float: yes
   pdf_document:
