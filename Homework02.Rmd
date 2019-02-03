@@ -1,7 +1,6 @@
 ---
 title: "MATH 341 - Homework 02"
 author: "Marjorie Blanco"
-date: "January 3, 2018"
 output:
   html_document:
     number_sections: yes
@@ -17,8 +16,6 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 library(ggplot2)
 ```
-
-# Homework 2
 
 ## Problem 1
 

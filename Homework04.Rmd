@@ -1,7 +1,6 @@
 ---
 title: "MATH 341 - Homework 04"
 author: "Marjorie Blanco"
-date: "January 29, 2018"
 output:
   html_document:
     number_sections: yes
@@ -16,8 +15,6 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-# Homework 4
 
 ## Problem 5.5 Coffee
 

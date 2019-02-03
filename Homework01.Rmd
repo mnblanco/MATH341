@@ -18,7 +18,6 @@ options(dplyr.print_min = 6, dplyr.print_max = 6)
 ---
 title: "MATH 341 - Homework 01"
 author: "Marjorie Blanco"
-date: "January 3, 2018"
 output:
   html_document:
     number_sections: yes
@@ -29,8 +28,6 @@ output:
   word_document:
     toc: yes
 ---
-
-# Homework 1
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)

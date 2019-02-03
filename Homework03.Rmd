@@ -1,7 +1,6 @@
 ---
 title: "Homework 03"
 author: "Marjorie Blanco"
-date: "January 3, 2018"
 output:
   html_document:
     number_sections: yes
@@ -16,8 +15,6 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-# Homework 3
 
 ## Problem 4.69 - Travel Voucher Processing
 

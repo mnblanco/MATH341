@@ -11,7 +11,6 @@
 
 <meta name="author" content="Marjorie Blanco" />
 
-<meta name="date" content="2018-01-29" />
 
 <title>MATH 341 - Homework 04</title>
 
@@ -1354,6 +1353,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -1361,14 +1363,74 @@ button.code-folding-btn:focus {
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -1475,21 +1537,18 @@ div.tocify {
 
 <h1 class="title toc-ignore">MATH 341 - Homework 04</h1>
 <h4 class="author"><em>Marjorie Blanco</em></h4>
-<h4 class="date"><em>January 29, 2018</em></h4>
 
 </div>
 
 
-<div id="homework-4" class="section level1">
-<h1><span class="header-section-number">1</span> Homework 4</h1>
 <div id="problem-5.5-coffee" class="section level2">
-<h2><span class="header-section-number">1.1</span> Problem 5.5 Coffee</h2>
+<h2>Problem 5.5 Coffee</h2>
 <div id="propulation" class="section level3">
-<h3><span class="header-section-number">1.1.1</span> Propulation</h3>
+<h3>Propulation</h3>
 <p>The population is all the coffee manufacture by company.</p>
 </div>
 <div id="confidence-interval-at-95" class="section level3">
-<h3><span class="header-section-number">1.1.2</span> Confidence Interval at 95%</h3>
+<h3>Confidence Interval at 95%</h3>
 <pre class="r"><code>sd.coffee &lt;- 7.1       #mg
 N &lt;- 50                #units
 mean.coffee &lt;- 110     #mg
@@ -1512,14 +1571,14 @@ error</code></pre>
 <p>If the sampling and estimation procedure is repeated many time, the confidence interval would include the population mean 95% of the time.</p>
 </div>
 <div id="interpretation" class="section level3">
-<h3><span class="header-section-number">1.1.3</span> Interpretation</h3>
+<h3>Interpretation</h3>
 <p>We are 95% confident that the average caffeine content is between 108.03 and 111.97 milligrams.</p>
 </div>
 </div>
 <div id="prroblem-5.8-mean-net-profit-margin" class="section level2">
-<h2><span class="header-section-number">1.2</span> Prroblem 5.8 Mean Net Profit Margin</h2>
+<h2>Prroblem 5.8 Mean Net Profit Margin</h2>
 <div id="confidence-interval-at-99" class="section level3">
-<h3><span class="header-section-number">1.2.1</span> Confidence Interval at 99%</h3>
+<h3>Confidence Interval at 99%</h3>
 <pre class="r"><code>mean.netprofitmargin &lt;- 0.072       
 N &lt;- 15                           
 sd.netprofitmargin &lt;- 0.125     
@@ -1538,12 +1597,12 @@ error</code></pre>
 <pre><code>## [1] 0.1680772</code></pre>
 </div>
 <div id="interpretation-1" class="section level3">
-<h3><span class="header-section-number">1.2.2</span> Interpretation</h3>
+<h3>Interpretation</h3>
 <p>We are 99% confident that the mean gross profit margin of all small business in the city is between -2.41 % and 16.81 %</p>
 </div>
 </div>
 <div id="prroblem-5.13-antibiotics" class="section level2">
-<h2><span class="header-section-number">1.3</span> Prroblem 5.13 Antibiotics</h2>
+<h2>Prroblem 5.13 Antibiotics</h2>
 <pre class="r"><code>sd.bacteria &lt;- 13       #cm^2
 e.bacteria &lt;- 3         #cm^2
 a &lt;- 0.01
@@ -1554,7 +1613,7 @@ N</code></pre>
 <p>The number of observations (cultures that must be developed and then tested) is 125.</p>
 </div>
 <div id="prroblem-10.7-false-positive" class="section level2">
-<h2><span class="header-section-number">1.4</span> Prroblem 10.7 False Positive</h2>
+<h2>Prroblem 10.7 False Positive</h2>
 <pre class="r"><code>N &lt;- 10000
 p &lt;- 591 / N
 q &lt;- 1 - p
@@ -1573,9 +1632,8 @@ error</code></pre>
 <pre class="r"><code>upper</code></pre>
 <pre><code>## [1] 0.06517411</code></pre>
 <div id="interpretation-2" class="section level3">
-<h3><span class="header-section-number">1.4.1</span> Interpretation</h3>
+<h3>Interpretation</h3>
 <p>We are 99% confident that the interval 0.05 and 0.07 contains the true proportion of false positives.</p>
-</div>
 </div>
 </div>
 
